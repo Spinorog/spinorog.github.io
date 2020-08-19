@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+        <link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css">
+
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+        <script src="d.js"></script>
+
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+         
+        <!--  data-show-export="true"-->
+
+        <!-- <div class="input-group"> <span class="input-group-addon">Filter</span>
+
+            <input id="filter" type="text" class="form-control" placeholder="Type here...">
+        </div> -->
+        <!-- data-search="true" data-custom-search="customSearch" -->
+        <!-- data-url="data.json" -->
+            <!-- data-select-item-name="toolbar1" -->
+        <!-- data-search="true" data-custom-search="customSearch" -->
+        <!-- data-show-toggle="true" 
+            data-show-columns="true" 
+             -->
+             <!-- class="table table-striped"  -->
+        <table 
+            data-url="json/data1.json"
+            id="table" 
+            data-pagination="true"
+            data-height="850"
+            data-search="true" data-show-toggle="true" data-show-columns="true" 
+            data-filter-control="true" 
+            data-show-search-clear-button="true"
+        >
+        <thead>
+            <tr>
+                <th data-field="marketplace" data-filter-control="input" data-sortable="true">Marketplace</th>
+                <th data-field="vendor" data-sortable="true">Vendor</th>
+                <th data-field="coords" data-sortable="true">Coords</th>
+                <th data-field="name" data-sortable="true">Name</th>
+                <th data-field="price" data-filter-control="input" data-sortable="true" class = "numer-separator">Price</th>
+                <th data-field="hit spells" data-sortable="true">Hit spells</th>
+                <th data-field="hit area" data-sortable="true">Hit area</th>
+                <th data-field="hit leech" data-sortable="true">Hit leech</th>
+
+                <th data-field="luck" data-sortable="true" data-filter-control="input">Luck</th>
+                <th data-field="di" data-sortable="true" data-filter-control="input">DI, %</th>
+                <th data-field="dmg" data-sortable="true">Dmg</th>
+                <th data-field="speed" data-sortable="true">Speed</th>
+                <th data-field="dmgs" data-sortable="true">Damages</th>
+                <th data-field="ssi" data-sortable="true" data-filter-control="input">SSI, %</th>
+                <th data-field="resist" data-sortable="true">Resists</th>
+                <th data-field="sr" data-sortable="true" data-filter-control="input">Self repair</th>
+
+                <th data-field="regens" data-sortable="true">Regens</th>
+                <th data-field="skills" data-sortable="true" data-filter-control="input">Skills</th>
+                <th data-field="stat" data-sortable="true" data-filter-control="input">Stats</th>
+                <th class="searchable" data-filter-control="input" data-field="props">Props</th>
+            </tr>
+        </thead>
+    </table>
+
+    
+    <!-- </div> -->
+    
+
+
+</body>
+</html>
